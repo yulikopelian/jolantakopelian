@@ -148,6 +148,66 @@
 </div> <!-- end of 'main' --> 
 
 
+<div id="space">
+	
+</div>
+
+<div class="galery">
+	<div class="menu floatColumn">
+		<div class="whiteBlock" style="height: 10%">			
+		</div>
+
+		<div class="pinkBlock" id="category" style="height: 80%">
+			<button class="button" id="btn1" onclick="appear('try1', 'pic1')">Photography</button>
+			<button class="button" id="btn2" onclick="appear('try2', 'pic2')">Paintings</button>
+			<button class="button" id="btn3" onclick="appear('try3', 'pic3')">HandMade Jewellery</button>
+		</div>
+
+		<div class="whiteBlock" style="height: 10%">			
+		</div>
+	</div>
+
+	<div class="menu floatColumn greenBlock">
+		<button class="insideBtn default" id="try1" onclick="appearImg('pic1')">insideBtn1</button>
+		<button class="insideBtn" id="try2" onclick="appearImg('pic2')">insideBtn2</button>
+		<button class="insideBtn" id="try3" onclick="appearImg('pic3')">insideBtn3</button>
+	</div>
+
+	<div class="floatColumn whiteBlock" style="width: 60%; height: 100%">
+		<img class="insideImg default" id="pic1" src="inf/IMG_20170527_193712_2.png">
+		<img class="insideImg" id="pic2" src="inf/IMG_20160616_145525_2.png">
+		<img class="insideImg" id="pic3" src="inf/IMG-20170524-WA0004_2.png">
+	</div>
+	
+</div>
+
+<script type="text/javascript">
+	function appear(btn, img) {
+	  disappear();
+	  disappearImg();
+	  document.getElementById(btn).style.display = "block";
+	  document.getElementById(img).style.display = "block";
+	}
+	function appearImg(id) {
+	  disappearImg();
+	  document.getElementById(id).style.display = "block";
+	}
+
+	function disappear() {
+		var btns = document.getElementsByClassName("insideBtn");
+		for (var i=0; i<btns.length; i++) {
+		    btns[i].style.display = "none";
+		}
+	}
+	function disappearImg() {
+		var btns = document.getElementsByClassName("insideImg");
+		for (var i=0; i<btns.length; i++) {
+		    btns[i].style.display = "none";
+		}
+	}
+</script>>
+
+
 
 
 
