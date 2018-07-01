@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<title> Jolanta </title>
 
-	<link rel="stylesheet" href="style_1.css">
+	<link rel="stylesheet" href="style.css">
 	
 	<script src="http://use.typekit.net/vzq4ipz.js"></script>
 	<script>try{Typekit.load();}catch(e){}</script>
@@ -32,7 +32,13 @@
     	     <p>Ciao,<br>
 		     I’m Yuli, a future graphic designer! As for today, I’m a student, who passionately discovers all the magic of the communication design world. I study in the inspiring city of Milan and live in the romantic city of Como. Every day brings with it a new experience that inspires and build my inner world and my creative mind.<br>
              In this webpage, I present you the most precious thing to me – my works. This portfolio is a little piece of me. So, I truly hope you will enjoy it.
-             </p>	
+             </p>
+             <div style="margin-top: 18%;">
+             <a href="#img_div11" style="margin-left: 5%"><u>My Manifesto</u></a>
+             <a href="#div_8" style="margin-left: 5%"><u>“Politically Incorrect” Project</u></a>
+             <a href="#galeryBox" style="margin-left: 5%"><u>Galery</u></a>
+             <a href="#mailBox" style="margin-left: 5%"><u>Contacts</u></a>
+             </div>	
     	</div> <!-- end of 'div_3' -->
     	<div id="bottom_column22">
     	     <div class="floatColumn pinkBlock" style='width: 33.33%; height: 45%'>
@@ -148,19 +154,19 @@
 </div> <!-- end of 'main' --> 
 
 
-<div id="space">
-	
+<div class="space">
 </div>
 
-<div class="galery">
+<div class="galery" id="galeryBox">
 	<div class="menu floatColumn">
 		<div class="whiteBlock" style="height: 10%">			
 		</div>
 
 		<div class="pinkBlock" id="category" style="height: 80%">
-			<button class="button" id="btn1" onclick="appear('try1', 'pic1')">Photography</button>
-			<button class="button" id="btn2" onclick="appear('try2', 'pic2')">Paintings</button>
-			<button class="button" id="btn3" onclick="appear('try3', 'pic3')">HandMade Jewellery</button>
+			<button class="button" id="btn1" onclick="appear('list1', 'pht1')">Photography</button>
+			<button class="button" id="btn2" onclick="appear('list2', 'paint1')">Paintings</button>
+			<button class="button" id="btn3" onclick="appear('list3', 'prj1')">Projects</button>
+			<button class="button" id="btn4" onclick="appear('list4', 'jwl1')">HandMade Jewellery</button>
 		</div>
 
 		<div class="whiteBlock" style="height: 10%">			
@@ -168,16 +174,64 @@
 	</div>
 
 	<div class="menu floatColumn greenBlock">
-		<button class="insideBtn default" id="try1" onclick="appearImg('pic1')">insideBtn1</button>
-		<button class="insideBtn" id="try2" onclick="appearImg('pic2')">insideBtn2</button>
-		<button class="insideBtn" id="try3" onclick="appearImg('pic3')">insideBtn3</button>
+		 <div class="insideBtn default" id="list1"> 
+		 <button class="greenBtn" id="btn11" onclick="appearImg('pht1')">"Street Art"</button>
+		 <button class="greenBtn" id="btn12" onclick="appearImg('pht2')">"Loneliness"</button>
+		 <button class="greenBtn" id="btn13" onclick="appearImg('pht3')">"Retro Rain"</button>
+		 <button class="greenBtn" id="btn14" onclick="appearImg('pht4')">"Haunted House"</button>
+	     <button class="greenBtn" id="btn15" onclick="appearImg('pht5')">"Smoking Break"</button>
+		 <button class="greenBtn" id="btn16" onclick="appearImg('pht6')">"Reality of illusion, Illusion of reality"</button>
+		 </div>
+
+		 <div class="insideBtn" id="list2"> 
+		 <button class="greenBtn" id="btn21" onclick="appearImg('paint1')">"Manipulation"</button>
+		 <button class="greenBtn" id="btn22" onclick="appearImg('paint2')">"Space to Imagine"</button>
+		 <button class="greenBtn" id="btn23" onclick="appearImg('paint3')">"City of Lights"</button>
+		 <button class="greenBtn" id="btn24" onclick="appearImg('paint4')">"The Fox and the Crow"</button>	     
+		 </div>
+
+		 <div class="insideBtn" id="list3"> 
+		 <button class="greenBtn" id="btn31" onclick="appearImg('prj1')">"Politically Incorrect"  1</button>
+		 <button class="greenBtn" id="btn32" onclick="appearImg('prj2')">"Politically Incorrect"  2</button>
+		 <button class="greenBtn" id="btn33" onclick="appearImg('prj3')">"Politically Incorrect"  3</button>
+		 <button class="greenBtn" id="btn34" onclick="appearImg('prj4')">"Women's Status in 900"  1</button>
+		 <button class="greenBtn" id="btn35" onclick="appearImg('prj5')">"Women's Status in 900"  2</button>	     
+		 </div>
+
+		 <div class="insideBtn" id="list4"> 
+		 <button class="greenBtn" id="btn41" onclick="appearImg('jwl1')">Black Swarovski</button>
+		 <button class="greenBtn" id="btn42" onclick="appearImg('jwl2')">Red Quartz</button>
+		 <button class="greenBtn" id="btn43" onclick="appearImg('jwl3')">"Blue Quartz Crown"</button>
+		 <button class="greenBtn" id="btn44" onclick="appearImg('jwl4')">Silver Elica</button>
+		 <button class="greenBtn" id="btn45" onclick="appearImg('jwl5')">Working Process</button>	     
+		 </div>
 	</div>
 
 	<div class="floatColumn whiteBlock" style="width: 60%; height: 100%">
-		<img class="insideImg default" id="pic1" src="inf/IMG_20170527_193712_2.png">
-		<img class="insideImg" id="pic2" src="inf/IMG_20160616_145525_2.png">
-		<img class="insideImg" id="pic3" src="inf/IMG-20170524-WA0004_2.png">
-	</div>
+		<img class="insideImg default" id="pht1" src="inf/IMG_20160616_145525_2.png">
+		<img class="insideImg" id="pht2" src="inf/IMG_20170527_193712_2.png">
+		<img class="insideImg" id="pht3" src="inf/IMG_20170618_125439_2.png">
+		<img class="insideImg" id="pht4" src="inf/IMG_20170618_152648_2-1.png">
+		<img class="insideImg" id="pht5" src="inf/IMG-20170524-WA0004_2.png">
+		<img class="insideImg" id="pht6" src="inf/IMG-20170708-WA0046_2.png">
+
+		<img class="insideImg" id="paint1" src="inf/IMG_20170821_081317.png">
+		<img class="insideImg" id="paint2" src="inf/DSC_0153.png">
+		<img class="insideImg" id="paint3" src="inf/IMG_20170821_081326.png">
+		<img class="insideImg" id="paint4" src="inf/IMG_20171103_004507_2.png">
+
+		<img class="insideImg" id="prj1" src="inf/DSC_0130.jpg">
+		<img class="insideImg" id="prj2" src="inf/DSC_0124_2.jpg">
+		<img class="insideImg" id="prj3" src="inf/DSC_0123_2.jpg">
+		<img class="insideImg" id="prj4" src="inf/DSC_0132_2.jpg">
+		<img class="insideImg" id="prj5" src="inf/DSC_0137_2.jpg">
+
+		<img class="insideImg" id="jwl1" src="inf/ww_2.png">
+		<img class="insideImg" id="jwl2" src="inf/wwe_2.png">
+		<img class="insideImg" id="jwl3" src="inf/wwq_2.png">
+		<img class="insideImg" id="jwl4" src="inf/www_2.png">
+		<img class="insideImg" id="jwl5" src="inf/wwqq_2.png">
+	</div>	
 	
 </div>
 
@@ -205,99 +259,37 @@
 		    btns[i].style.display = "none";
 		}
 	}
-</script>>
+</script>
 
-
-
-
-
-
-
-
-<!--		<footer>
-			<a href="http://validator.w3.org/check/referer" title="Check the validity of this site&#8217;s HTML" class="zen-validate-html">HTML</a>
-			<a href="http://jigsaw.w3.org/css-validator/check/referer" title="Check the validity of this site&#8217;s CSS" class="zen-validate-css">CSS</a>
-			<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" title="View the Creative Commons license of this site: Attribution-NonCommercial-ShareAlike." class="zen-license">CC</a>
-			<a href="http://mezzoblue.com/zengarden/faq/#aaa" title="Read about the accessibility of this site" class="zen-accessibility">A11y</a>
-			<a href="https://github.com/mezzoblue/csszengarden.com" title="Fork this site on Github" class="zen-github">GH</a>
-		</footer>
-
-	</div>
-
-
-	<aside class="sidebar" role="complementary">
-		<div class="wrapper">
-
-			<div class="design-selection" id="design-selection">
-				<h3 class="select">Select a Design:</h3>
-				<nav role="navigation">
-					<ul>
-					<li>
-						<a href="/221/" class="design-name">Mid Century Modern</a> by						
-						<a href="http://andrewlohman.com/" class="designer-name">Andrew Lohman</a>
-					</li>					
-					<li>
-						<a href="/220/" class="design-name">Garments</a> by						
-						<a href="http://danielmall.com/" class="designer-name">Dan Mall</a>
-					</li>					
-					<li>
-						<a href="/219/" class="design-name">Steel</a> by						
-						<a href="http://steffen-knoeller.de" class="designer-name">Steffen Knoeller</a>
-					</li>					
-					<li>
-						<a href="/218/" class="design-name">Apothecary</a> by						
-						<a href="http://trentwalton.com" class="designer-name">Trent Walton</a>
-					</li>					
-					<li>
-						<a href="/217/" class="design-name">Screen Filler</a> by						
-						<a href="http://elliotjaystocks.com/" class="designer-name">Elliot Jay Stocks</a>
-					</li>					
-					<li>
-						<a href="/216/" class="design-name">Fountain Kiss</a> by						
-						<a href="http://jeremycarlson.com" class="designer-name">Jeremy Carlson</a>
-					</li>					
-					<li>
-						<a href="/215/" class="design-name">A Robot Named Jimmy</a> by						
-						<a href="http://meltmedia.com/" class="designer-name">meltmedia</a>
-					</li>					
-					<li>
-						<a href="/214/" class="design-name">Verde Moderna</a> by						
-						<a href="http://www.mezzoblue.com/" class="designer-name">Dave Shea</a>
-					</li>					
-				</ul>
-				</nav>
-			</div>
-
-			<div class="design-archives" id="design-archives">
-				<h3 class="archives">Archives:</h3>
-				<nav role="navigation">
-					<ul>
-						<li class="next">
-							<a href="/221/page1">
-								Next Designs <span class="indicator">&rsaquo;</span>
-							</a>
-						</li>
-						<li class="viewall">
-							<a href="http://www.mezzoblue.com/zengarden/alldesigns/" title="View every submission to the Zen Garden.">
-								View All Designs							</a>
-						</li>
-					</ul>
-				</nav>
-			</div>
-
-			<div class="zen-resources" id="zen-resources">
-				
-				
-			</div>
-		</div>
-	</aside>
-
-
+<div class="space">	
 </div>
 
+<footer id="footer" style="height: 300px; width: 100%">
+	<div class="floatColumn blueBlock" id="LLF">		
+	</div>
 
-<div class="extra1" role="presentation"></div><div class="extra2" role="presentation"></div><div class="extra3" role="presentation"></div>
-<div class="extra4" role="presentation"></div><div class="extra5" role="presentation"></div><div class="extra6" role="presentation"></div>
+	<div class="floatColumn greenBlock" id="midF">	
+	     <div id="mailBox">
+	         <p id="pBox">To contact me please by e-mail </p>
+	         <pre>
+	         	
+	         </pre>
+	         <a href="mailto:yulikoplan@gmail.com" id="click"><u><b>Click here!</b></u></a></p>
+		   
+		     		
+		 </div>
+</div>
 
-</body>
+	<div class="floatColumn blueBlock" id="finF">
+		 <div class="txtFin">
+		 	 <p>This leading page is my personal portfolio, designed by my self - 
+		 	 <pre></pre>
+		     <h3 style="text-align: center">Jolanta Kopelian</h3>student of Communication Design in Politecnico di Milano, for Informatica course.</p>
+		 </div>
+	</div>
+</footer>
+
+
+
+
 </html>
