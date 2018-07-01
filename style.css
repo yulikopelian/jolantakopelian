@@ -21,6 +21,11 @@ acronym[title] {
 }
 
 
+@font-family{
+  font-family: Zallord; 
+  src: url(inf/Zallord.ttf);
+}
+
 html,
 body {
   font-family: "ff-meta-web-pro", sans-serif;
@@ -101,7 +106,7 @@ h1{
   color: #ffffff;
   font-size: 96px;   
   line-height: 3em;
-  font-family: Zallord; src: url(inf/Zallord.ttf);
+  font-family: Zallord;
 }
 .div_3 {
   background-color: #f4b5a4;
